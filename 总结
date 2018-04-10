@@ -1,0 +1,31 @@
+游戏对象的使用总结：
+ 	游戏对象的创建
+ 		static function CreatePrimitive (type : PrimitiveType) : GameObject
+ 	游戏对象的克隆
+ 		public static Object Instantiate(Object original);
+ 	游戏对象的销毁
+		public static void Destroy(Object obj, float t = 0.0F);
+
+	把脚本添加到对象上（组件的添加）
+		一种是把脚本拖到对象上
+		另一种是通过函数AddComponent
+	获取游戏对象的组件
+		GetComponent            得到组件
+GetComponents           得到组件列表（用于多个同类型组件的时候）
+GetComponentInChildren   得到对象或对象子物体上的组件
+	销毁对象上的脚本（组件）
+		Destroy(gameobject_name.GetComponent(“component_name”))
+
+	获取游戏对象
+		通过名称查找
+			GameObject.Find(gameobject_name)
+		通过tag查找
+			GameObject.FindGameObjectsWithTag（tag_name）
+		
+	游戏对象常用的组件
+		Active: 决定了游戏对象在场景中是否会进行渲染出现
+		Transfrom：
+			Position: 游戏对象的坐标，分世界坐标和相对坐标
+			Rotate:	游戏对象的旋转角度
+			Scale:游戏对象大小比例
+		
