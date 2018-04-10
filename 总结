@@ -11,8 +11,8 @@
 		另一种是通过函数AddComponent
 	获取游戏对象的组件
 		GetComponent            得到组件
-GetComponents           得到组件列表（用于多个同类型组件的时候）
-GetComponentInChildren   得到对象或对象子物体上的组件
+		GetComponents           得到组件列表（用于多个同类型组件的时候）
+		GetComponentInChildren   得到对象或对象子物体上的组件
 	销毁对象上的脚本（组件）
 		Destroy(gameobject_name.GetComponent(“component_name”))
 
